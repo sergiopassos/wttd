@@ -55,10 +55,10 @@ def not_bad(s):
 def front_back(a, b):
     # +++your code here+++
     if len(a) and len(b) % 2 == 0:
-        return f'{a[:int(len(a) / 2)]}{b[:int(len(b) / 2)]}{a[int(len(a) / 2):]}{b[int(len(b) / 2):]}'
+        front_back = f'{a[:int(len(a) / 2)]}{b[:int(len(b) / 2)]}{a[int(len(a) / 2):]}{b[int(len(b) / 2):]}'
     else:
-        return f'{a[:int(len(a) - (len(a)) // 2)]}{b[:int(len(b) - (len(b)) // 2)]}{a[int(len(a) - (len(a)) // 2):]}{b[int(len(b) - (len(b)) // 2):]}'
-    return
+        front_back = f'{a[:int(len(a) - (len(a)) // 2)]}{b[:int(len(b) - (len(b)) // 2)]}{a[int(len(a) - (len(a)) // 2):]}{b[int(len(b) - (len(b)) // 2):]}'
+    return front_back
 
 
 # Simple provided test() function used in main() to print
